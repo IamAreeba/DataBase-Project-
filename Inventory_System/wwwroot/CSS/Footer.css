@@ -1,0 +1,27 @@
+﻿footer{
+    padding: 60px 0;
+    background-color: #f8fafa;
+}
+
+
+#footer-info{
+    width: 380px;
+    float: left;
+    margin-top:10px;
+}
+
+#footer-links{
+    width: 520px;
+    float: right;
+}
+
+#footer-links ul{
+    width: 150px;
+    float:left;
+    margin-left: 20px;
+}
+
+#footer-links ul li{
+    margin:10px 0;
+}
+

@@ -1,0 +1,2 @@
+C:\Users\home\Desktop\AreebaKU\Inventory_System\Inventory_System\obj\Debug\Inventory_System.csproj.AssemblyReference.cache
+C:\Users\home\Desktop\AreebaKU\Inventory_System\Inventory_System\obj\Debug\Inventory_System.csproj.CoreCompileInputs.cache

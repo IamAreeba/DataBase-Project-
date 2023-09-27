@@ -1,0 +1,169 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="wwwroot_Admin_AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <%--w3.css Link--%>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link href="../CSS/w3.css" rel="stylesheet" />
+    <%--w3.css for fb, insta etc--%>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+
+
+    <style>
+
+        div.scrollmenu{
+            background-color: #333;
+            overflow:auto;
+            white-space:nowrap;
+        }
+
+            div.scrollmenu a {
+                display: inline-block;
+                color:white;
+                text-align:center;
+                padding:14px;
+                text-decoration:none;
+            }
+
+            div.scrollmenu a:hover{
+                background-color: #777;
+            }
+
+
+
+
+    </style>
+    
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+    
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="w3-container" >
+
+        <%--Displaying UserName and Image--%>
+        <h2>
+            
+            <asp:Image ID="Image1" runat="server" Width="80px" Height="80px" ImageUrl="~/wwwroot/Images/Avtar.jpg" /> 
+
+            
+            Hi, &nbsp; <asp:Label ID="lblUser" runat="server" Text="Label" ForeColor="SeaGreen"></asp:Label>
+            
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp; Welcome To Our Inventory Website ...... 
+        </h2>
+    
+        <%--Menu starts here--%>
+
+            
+
+
+        <div class="scrollmenu w3-teal">
+            <h3>
+                <a href="AdminMasterPage.master" class="w3-bar-item w3-button">Home</a>
+                <a href="Brand.aspx" class="w3-bar-item w3-button">AddBrand</a>
+                <a href="WebCategory.aspx" class="w3-bar-item w3-button">Category</a>
+                <a href="WebPageProduct.aspx" class="w3-bar-item w3-button">Product</a>
+                <a href="About.html" class="w3-bar-item w3-button">About </a>
+                <a href="Contact.html" class="w3-bar-item w3-button">Contact</a>
+                <asp:Button  CssClass="w3-teal" ID="Button1" runat="server" runat="server" Text=" Logoff " Width="57px" />
+                
+                
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776 </a>
+             </h3>
+         </div>
+
+        <%--<div id="demo" class="w3-bar-block w3-bar-item w3-red w3-hide w3-hide-large w3-hide-medium">
+            <a href="#" class="w3-bar-item w3-button">AddRecord</a>
+            <a href="WebCategory.aspx" class="w3-bar-item w3-button">Category</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+
+        </div>--%>
+
+        <%--Menu ends here--%>
+            <br/>
+
+            <%--Diving the page using percentages--%>
+
+            <div class="w3-row">
+              <div class="w3-col bg-secondary text-white" style="width:15%">
+                  <br />
+                  <h4> &nbsp;Left Menu</h4>
+                  <br />
+                  <ol>
+                      <li>Home</li>
+                      <br />
+                      <li>Link 1</li>
+                      <br />
+                      <li>Link 2</li>
+                      <br /> 
+                      <li>Link 3</li>
+                      
+                 </ol>
+              </div>
+              <div class="w3-col w3-win8-olive w3-container" style="width:70%">
+                  
+                  <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                  </asp:ContentPlaceHolder>
+
+              </div>
+
+              <div class="w3-col bg-secondary text-white" style="width:15%">
+                  <br />
+                  <h4> &nbsp;Right Menu</h4>
+                  <br />
+                  <ol>
+                      <li>Home</li>
+                      <br />
+                      <li>Link 1</li>
+                      <br />
+                      <li>Link 2</li>
+                      <br /> 
+                      <li>Link 3</li>
+                      
+                 </ol>
+
+              </div>
+            </div>
+            <br/>
+            <%--Ending Percentages--%>
+
+        
+
+        
+
+    <%--Footer starts here--%>
+    <footer class="w3-container w3-purple w3-center" style="padding:32px">
+        <p>Footer Information goes here</p>
+
+        <address>Karachi, Pakistan +92 3350296628 a@a.com</address>
+        <div class="w3-large w3-section">
+            <i class="fa fa-facebook w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-youtube w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+
+        <p>Powered By <a href="https://www.w3schools.com/w3css/default.asp" title="Areeba" target="_blank" class="w3-hover-text-green"> Areeba Website </a></p>
+    </footer>
+
+            <%--Footer ends here--%>
+        
+    </div>
+    </form>
+</body>
+</html>
